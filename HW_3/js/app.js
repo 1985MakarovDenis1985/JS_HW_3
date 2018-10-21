@@ -10,7 +10,7 @@ function checkAndChangeWord() {
   if(target === null){ // сравниваем с cancel
     alert("bye... see you next time");
     return;
-  }else if(target == +target){ // сравниваем с цифрами
+  }else if(target == +target || target == "/" || target == "+" || target == "-" || target == "*" || target == "="){ // сравниваем с цифрами
     alert("it wasn`t word, try again...");
     return checkAndChangeWord() // если цифра - то возвращаем функцию
   }else{ // норм работа функции
